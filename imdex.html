@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthik | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3.2rem;
+            animation: fadeDown 1.5s;
+        }
+
+        header span {
+            color: #00ffd5;
+        }
+
+        header p {
+            margin: 15px 0;
+            font-size: 1.2rem;
+            animation: fadeUp 1.5s;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: #00ffd5;
+            color: #000;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #fff;
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #00ffd5;
+        }
+
+        .about,
+        .skills,
+        .projects {
+            display: grid;
+            gap: 25px;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .skill-box,
+        .project-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            transition: 0.4s;
+        }
+
+        .skill-box:hover,
+        .project-box:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .skills {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+
+        .projects {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #000;
+            font-size: 0.9rem;
+        }
+
+        @keyframes fadeDown {
+            from {
+                opacity: 0;
+                transform: translateY(-40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Hi, I'm <span>A.Karthik reddy</span></h1>
+        <p>Young Innovator | Student | Future Tech Entrepreneur 🚀</p>
+        <a href="#about"><button class="btn">Explore My Portfolio</button></a>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about">
+            <p>
+                I am a passionate young innovator who loves building websites, AI projects,
+                and creative digital solutions. My dream is to become a young innovatorsuccessful
+                entrepreneur and inspire other students through technology.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <div class="skill-box">🌐 HTML & CSS</div>
+            <div class="skill-box">⚡ JavaScript Basics</div>
+            <div class="skill-box">🤖 AI Website Creation</div>
+            <div class="skill-box">🎨 UI / UX Design</div>
+            <div class="skill-box">🚀 Startup Ideas</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-box">
+                <h3>Lost & Found Website</h3>
+                <p>A public website it will work only in vempalli the website purpose is if you lost or found any thing
+                    you can upload here it has AI matching also</p>
+            </div>
+            <div class="project-box">
+                <h3>Mindful Practices Website</h3>
+                <p>in samsidh schools there are mindful practices for that this website is it has AI chatbot also which
+                    if you are feeling any pain you can tell to the chat bot it tells which exercise want to do</p>
+            </div>
+            <div class="project-box">
+                <h3>child labour vempalli</h3>
+                <p>iT is a webite where we can upload a child going for works like:tea shop or other you can report here
+                    your complaint will go directly to out Mandal educational officer sir</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="about">
+            <p>Email:k7532198431@gmail.com </p>
+            <p>Location: India 🇮🇳</p>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 | Designed & Developed by Karthik 💙
+    </footer>
+
+</body>
+
+</html>
